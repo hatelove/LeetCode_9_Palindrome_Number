@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LeetCode_9_Palindrome_Number
 {
@@ -18,7 +17,8 @@ namespace LeetCode_9_Palindrome_Number
     {
         public bool IsPalindrome(int x)
         {
-            throw new NotImplementedException();
+            var charArray = x.ToString().ToCharArray();
+            return charArray.Length == 1;
         }
     }
 }
