@@ -8,7 +8,11 @@ namespace LeetCode_9_Palindrome_Number
         [TestMethod]
         public void x_length_is_1_should_be_palindrome()
         {
-            var x = 5;
+            ShouldBePalindrome(5);
+        }
+
+        private static void ShouldBePalindrome(int x)
+        {
             Assert.IsTrue(new Solution().IsPalindrome(x));
         }
     }
