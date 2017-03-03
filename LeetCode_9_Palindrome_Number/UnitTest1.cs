@@ -29,6 +29,12 @@ namespace LeetCode_9_Palindrome_Number
             ShouldBePalindrome(676);
         }
 
+        [TestMethod]
+        public void x_is_678_should_be_not_palindrome()
+        {
+            ShouldBeNotPalindrome(678);
+        }
+
         private void ShouldBeNotPalindrome(int x)
         {
             Assert.IsFalse(new Solution().IsPalindrome(x));
